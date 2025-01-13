@@ -65,25 +65,3 @@ def normalized_real_IFFT(P, decimals=4, threshold=1e-6):
         # Round to the nearest integer
         result.append(round(normalized_value))
     return result
-
-'''def format_complex_array(arr, decimals=4):
-    # Format the complex numbers in the array to the specified number of decimals
-    return [complex(round(value.real, decimals), round(value.imag, decimals)) for value in arr]'''
-'''
-# Example Driver Code
-input_array = [1, 2, 3, 4, 5, 6, 7, 8]  # Example input
-
-# Perform FFT
-fft_result = FFT(input_array)
-
-# Format FFT results to 4 decimal places
-# formatted_fft_result = format_complex_array(fft_result, decimals=4)
-
-# Perform IFFT and normalize with rounding
-ifft_result = normalized_real_IFFT(fft_result)
-
-print("Input Array:", input_array)
-print("FFT Result (Rounded):", fft_result)
-# print("Formatted FFT Result (4 Decimal Places):", formatted_fft_result)
-print("IFFT Result (Rounded):", ifft_result)
-'''
